@@ -1,0 +1,475 @@
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+
+        @font-face {
+          font-family: ourfont-light;
+          src: url(../fonts/ourfont-Light.woff2);
+        }
+
+        @font-face {
+          font-family: ourfont-bold;
+          src: url(../fonts/ourfont-bold.woff2);
+        }
+
+        body {
+          font-family: ourfont-light;
+
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+
+        $primary:#F95425;
+        $dark:#172b4d;
+        $white:#fff;
+        $lightgrey:#ECEBE9;
+
+
+        //classes
+
+        .navCustom {
+          opacity: 0;
+          position: fixed;
+          top: 100%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-image: linear-gradient(45deg, #ffb729, #dc8f01b3), url(../images/dobbelburger.jpg);
+          z-index: 111;
+          background-size: cover;
+          background-position: 20% 36%;
+          transition: all 0.4s ease;
+
+          &.active {
+            opacity: 1;
+            top: 0;
+
+            .iconify {
+              position: fixed;
+              transition: all 0.3s ease;
+              top: 36px;
+              left: 27px;
+              transform: rotate(44deg);
+              font-size: 4rem;
+              cursor: pointer;
+              opacity: 0;
+
+              &.active {
+                animation: fadeIn 0.9s forwards !important;
+              }
+            }
+          }
+
+          .brand {
+            background: #ffffff;
+            position: absolute;
+            margin: 0 auto;
+            max-width: 197px;
+            padding-top: 16px;
+
+            @media(max-width:768px) {
+              max-width: 100px;
+            }
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+            &:after {
+              content: '';
+              height: 300px;
+              background: white;
+              width: 300px;
+              position: absolute;
+              top: -93px;
+              left: -53px;
+              z-index: -1;
+              border-radius: 50%;
+
+
+              @media(max-width:768px) {
+                height: 198px;
+                background: white;
+                width: 170px;
+                position: absolute;
+                top: -76px;
+                left: -33px;
+              }
+
+            }
+          }
+
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+
+          .inner {
+            margin-top: 240px;
+            height: auto;
+
+            @media(max-width:768px) {
+              margin-top: 11rem;
+            }
+
+            @media(max-width:700px) {
+              margin-top: 160px;
+            }
+
+
+
+            .floatingMenu {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+
+              @media(max-width:700px) {
+                text-align: center;
+              }
+
+              li {
+                a {
+                  text-decoration: none;
+                  font-size: 2.22222rem;
+                  line-height: 48px;
+                  color: $dark;
+                  transition: all 0.3s ease-in-out;
+
+                  @media(max-width:700px) {
+                    font-size: 1.62222rem;
+                    line-height: 1.6;
+                  }
+
+                  &:hover {
+                    color: $white;
+                  }
+                }
+              }
+            }
+
+            .floatingMenuSmall {
+              @extend .floatingMenu;
+
+              li {
+                a {
+                  font-size: 25px;
+                  color: $white;
+                  &:hover {
+                    color: $dark;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+
+        .toTop {
+          position: fixed;
+          right: 10px;
+          bottom: 32px;
+          background: $dark;
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            color: $white;
+            background: $primary;
+          }
+        }
+
+        .product_desc {
+          font-size: 18px;
+        }
+
+        .btn-theme {
+          cursor: pointer;
+          border-radius: 6px;
+          display: inline-block;
+          align-items: center;
+          outline: none;
+          transition: .3s ease;
+          background-color: $primary;
+          border: 2px solid $primary;
+          color: $white !important;
+          padding: 16px 24px;
+          font-size: 1.5rem;
+          text-decoration: none !important;
+
+          &:hover {
+            background-color: $dark;
+          }
+        }
+
+        .bg-primary {
+          background-color: $primary !important;
+
+          &:hover {
+            background-color: orange;
+          }
+        }
+
+        .text-primary {
+          color: $primary !important;
+        }
+
+        // buttons 
+
+        .link-outline {
+          cursor: pointer;
+          border-radius: 6px;
+          display: inline-block;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          outline: none;
+          -webkit-transition: .3s ease;
+          transition: .3s ease;
+          background-color: transparent;
+          border: 2px solid $primary;
+          color: $primary !important;
+          padding: 4px 13px;
+          text-decoration: none;
+          font-size: 1.63333rem;
+          text-decoration: none;
+
+          @media(max-width:768px){
+            font-size:1.23333rem;
+          }
+
+          .iconify {
+            color: $primary;
+          }
+
+          &:hover {
+            color: $white !important;
+            background: $primary;
+
+            .iconify {
+              color: $white !important;
+            }
+          }
+        }
+
+        //classes
+
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .area {
+            padding: 0 25px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            &:nth-child(1) {
+              .navItem {
+                @media(max-width:1024px) {
+                  display: none;
+                }
+              }
+            }
+
+            &:nth-child(2) {
+              flex: 0.3;
+              @media(max-width:768px) {
+                flex: 1;
+              }
+            }
+
+            &:nth-child(3) {
+              justify-content: flex-end;
+
+              .navItem {
+                @media(max-width:1024px) {
+                  display: none;
+                }
+              }
+            }
+
+            .brand {
+              img {}
+
+              ;
+            }
+
+            .navBtn {
+              .iconify {
+                font-size: 62px;
+                cursor: pointer;
+              }
+            }
+
+
+
+            ul {
+              padding: 0;
+              margin: 0;
+
+              li {
+                list-style: none;
+                display: inline;
+
+                a {
+                  color: $dark;
+                  margin: 0 15px;
+                  text-transform: capitalize;
+                  font-size: 1.63333rem;
+                  line-height: 28px;
+                  text-decoration: none;
+                  transition: 0.3s all;
+
+                  &:hover {
+                    color: $primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slide {
+          position: relative;
+          height: 82.5vh;
+          overflow-y: hidden;
+        @media(max-width:768px){
+          height: unset;
+        }
+          video {
+            width: 100%;
+          }
+
+          .slideInfo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #3a6f3e87;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .inner {
+              h1 {
+                font-size: 4.44444rem;
+                line-height: 88px;
+                color: $white;
+                font-family: 'ourfont-bold';
+                 @media(max-width:768px){
+                  text-align: center;
+                  font-size: 42px;
+        }
+              }
+
+              .links {
+                display: flex;
+                justify-content: center;
+
+                .link-outline {
+                  margin: 0 15px;
+                  border: 2px solid $white !important;
+                  letter-spacing: 2px;
+                  color: $white !important;
+                  font-size: 1.33333rem;
+                  line-height: 32px;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+
+        // food items page
+
+        .menuItems {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          flex-direction: column;
+          padding: 15px 0;
+
+          h1 {
+            font-size: 3.11111rem;
+            line-height: 64px;
+            color: $dark;
+          }
+
+          hr {
+            display: block;
+            height: 2px;
+            width: 128px;
+            background: $primary;
+            border: 0;
+            margin-bottom: 40px;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+              list-style: none;
+              display: inline;
+
+              a {
+                margin-right: 10px;
+                padding: 10px 20px;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $dark;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                  background-color: $primary;
+                  color: $white;
+                }
+
+              }
+            }
+          }
+        }
+
+        .food {
+          padding: 50px;
+          background: $lightgrey;
+
+          .card {
+            transition: 0.4s all;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        :target .col-lg-12 .mb-5 {
+          color: $primary;
+        }
+
+        @keyframes fadeIn {
+          from {
+            transform: rotate(45deg);
+          }
+
+          to {
+            transform: rotate(360deg);
+            opacity: 1;
+          }
+        }

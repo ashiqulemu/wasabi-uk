@@ -1,0 +1,201 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+
+
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- header start -->
+
+  <section class="header">
+    <div class="area">
+      <div class="navBtn" onclick='callNav()'>
+        <span class="iconify mr-4" data-icon="bytesize:menu" data-inline="false"></span>
+      </div>
+      <ul class="navItem">
+        <li><a href="food-item.html">our food</a></li>
+        <li><a href="">latest offer </a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </div>
+    <div class="area">
+      <a href="/" class="brand">
+        <img src="./images/logo.png" class="p-2 img-fluid d-block text-center">
+      </a>
+    </div>
+    <div class="area">
+      <ul class="navItem">
+        <li><a href="">our food</a></li>
+        <li><a href="">latest offer </a></li>
+        <li><a href="">About Us</a></li> 
+      </ul>
+      <a href="" class="link-outline text-decoration-none">
+        <span class="iconify" data-icon="bx:bxs-map" data-inline="false"></span>
+        find us
+      </a>
+    </div>
+
+    <div class="navCustom" id='navCustom'>
+      <span onclick='closeNav()' class="iconify" id='closeBtn' data-icon="clarity:times-line"
+        data-inline="false"></span>
+        <a href="" class='brand'>
+          <img src="./images/logo.png">
+        </a>
+      <div class="inner container">
+       
+        <div class="row">
+          <div class="col-md-8 offset-md-1">
+            <div class="row">
+              <div class="col-md-5">
+                <ul class='floatingMenu'>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Our Food </a></li>
+                  <li><a href="">Latest Offer </a></li>
+                  <li><a href="">About Us </a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class='floatingMenuSmall'>
+                  <li><a href=""> Home</a></li>
+                  <li><a href=""> Our Food </a></li>
+                  <li><a href=""> Latest Offer </a></li>
+                  <li><a href=""> About Us </a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class='floatingMenuSmall'>
+                  <li><a href=""> Home</a></li>
+                  <li><a href=""> Our Food </a></li>
+                  <li><a href=""> Latest Offer </a></li>
+                  <li><a href=""> About Us </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="slide">
+    <video autoplay muted loop width='100%'>
+      <source width='100%' src="./video/video.mp4" type="video/mp4">
+    </video>
+    <div class="slideInfo">
+      <div class="inner">
+        <h1 class="mb-3">made fresh daily</h1>
+        <div class='links'>
+          <a href="" class="link-outline">Find a wasabi</a>
+          <a href="" class="link-outline">Search Delicious Food</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='p-5 bg-dark'></section>
+
+
+
+
+
+  <!--  
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/slider/1.jpg" class="d-block img-fluid"></div>
+                    <div class="swiper-slide"><img src="/images/slider/2.jpg" class="d-block img-fluid"></div>
+                    <div class="swiper-slide"><img src="/images/slider/3.jpg" class="d-block img-fluid"></div>
+                    <div class="swiper-slide"><img src="/images/slider/4.jpg" class="d-block img-fluid"></div> 
+                    <div class="swiper-slide"><img src="/images/slider/5.jpg" class="d-block img-fluid"></div> 
+                   
+                </div> 
+                <div class="swiper-pagination"></div>
+            </div> -->
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        loopedSlides: 4,
+        centeredSlides: false,
+        spaceBetween: 10,
+        grabCursor: true,
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        //   pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //       },
+        //       navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //       },
+
+        breakpoints: {
+          1400: {
+            slidesPerView: 4,
+            loopedSlides: 5,
+            spaceBetween: 30
+          },
+          1200: {
+            slidesPerView: 4,
+            loopedSlides: 4,
+            spaceBetween: 10
+          },
+
+          1024: {
+            slidesPerView: 3,
+            loopedSlides: 3,
+            spaceBetween: 10
+          },
+
+          768: {
+            slidesPerView: 2,
+            loopedSlides: 2,
+            spaceBetween: 10
+          },
+
+          675: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            spaceBetween: 20
+          },
+          425: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            spaceBetween: 20
+          },
+
+          375: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            spaceBetween: 20
+          },
+
+        }
+      }
+
+    );
+  </script>
+</body>
+
+</html>
