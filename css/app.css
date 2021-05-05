@@ -619,6 +619,46 @@ html {
   font-size: 22px;
 }
 
+.mainFooter {
+  background: #F95425;
+  padding: 50px 0;
+}
+
+.mainFooter table tr td {
+  color: #ffffff;
+  font-size: 19px;
+  border: 1px solid;
+  padding: 1px 7px;
+}
+
+.mainFooter .sp-module-title {
+  color: #e9ea6e;
+}
+
+.mainFooter .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mainFooter .menu li a {
+  line-height: 1.5;
+  color: #ffffff;
+  font-size: 21px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.mainFooter .menu li a:hover {
+  color: black;
+}
+
+.mainFooter .custom p {
+  margin-bottom: 0;
+  font-size: 21px;
+  color: #fff;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     -webkit-transform: rotate(45deg);
