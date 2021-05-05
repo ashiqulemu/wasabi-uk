@@ -8,8 +8,6 @@
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
-
-
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 </head>
 
@@ -37,9 +35,9 @@
       <ul class="navItem">
         <li><a href="">our food</a></li>
         <li><a href="">latest offer </a></li>
-        <li><a href="">About Us</a></li> 
+        <li><a href="">About Us</a></li>
       </ul>
-      <a href="" class="link-outline text-decoration-none">
+      <a href="" class="link-outline text-decoration-none d-none d-sm-block">
         <span class="iconify" data-icon="bx:bxs-map" data-inline="false"></span>
         find us
       </a>
@@ -48,18 +46,18 @@
     <div class="navCustom" id='navCustom'>
       <span onclick='closeNav()' class="iconify" id='closeBtn' data-icon="clarity:times-line"
         data-inline="false"></span>
-        <a href="" class='brand'>
-          <img src="./images/logo.png">
-        </a>
+      <a href="/" class='brand'>
+        <img src="./images/logo.png">
+      </a>
       <div class="inner container">
-       
+
         <div class="row">
           <div class="col-md-8 offset-md-1">
             <div class="row">
               <div class="col-md-5">
                 <ul class='floatingMenu'>
                   <li><a href="">Home</a></li>
-                  <li><a href="">Our Food </a></li>
+                  <li><a href="/food-item.html">Our Food </a></li>
                   <li><a href="">Latest Offer </a></li>
                   <li><a href="">About Us </a></li>
                 </ul>
@@ -67,7 +65,7 @@
               <div class="col-md-3">
                 <ul class='floatingMenuSmall'>
                   <li><a href=""> Home</a></li>
-                  <li><a href=""> Our Food </a></li>
+                  <li><a href="/food-item.html"> Our Food </a></li>
                   <li><a href=""> Latest Offer </a></li>
                   <li><a href=""> About Us </a></li>
                 </ul>
@@ -75,7 +73,7 @@
               <div class="col-md-3">
                 <ul class='floatingMenuSmall'>
                   <li><a href=""> Home</a></li>
-                  <li><a href=""> Our Food </a></li>
+                  <li><a href="/food-item.html"> Our Food </a></li>
                   <li><a href=""> Latest Offer </a></li>
                   <li><a href=""> About Us </a></li>
                 </ul>
@@ -103,24 +101,111 @@
       </div>
     </div>
   </section>
-  <section class='p-5 bg-dark'></section>
+  <section class='sectionCommon'>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+          <div class="customSection">
+            <span class="iconify" data-icon="emojione:pot-of-food" data-inline="false"></span>
+            <h1>Making Choices Easier</h1>
+            <p>19 vegan options. Over 30 options under 600kcal. New Vegan Katsu from January 20th</p>
+            <button class="btn-theme text-uppercase">find out more</button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 p-0 d-flex align-items-center rightBg">  </div>
+      </div>
+    </div>
+  </section>
+  <section class='productSlider'>
+
+    <div class='text-center'>
+      <span class="iconify" data-icon="noto:hamburger" data-inline="false"></span>
+      <h1>fresh, flavourful and fast</h1>
+      <p>Discover our food, freshly prepared, every day. From all sizes of sushi sets to mouth-watering hot bento
+        dishes, <br> warming noodle soups and authentic salads.</p>
+
+    </div>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/product-slider/1.png" class="d-block img-fluid"></div>
+        <div class="swiper-slide"><img src="/images/product-slider/2.png" class="d-block img-fluid"></div>
+        <div class="swiper-slide"><img src="/images/product-slider/3.png" class="d-block img-fluid"></div>
+        <div class="swiper-slide"><img src="/images/product-slider/4.png" class="d-block img-fluid"></div>
+        <div class="swiper-slide"><img src="/images/product-slider/5.png" class="d-block img-fluid"></div> 
+         
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class='sectionCommon'>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 p-0 d-flex align-items-center leftBg">
+          
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 align-items-center d-flex">
+          <div class="customSection">
+            <span class="iconify" data-icon="twemoji:delivery-truck" data-inline="false"></span>
+            <h1>we deliver</h1>
+            <p>Your fresh, flavourful and fast favourites delivered directly to your desk or doorstep. Corporate and
+              Home delivery.</p>
+            <button class="btn-theme text-uppercase">view branches</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class='sectionTwo subscribe'>
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="customSection py-5">
+            <span class="iconify text-primary" data-icon="dashicons:email-alt" data-inline="false"></span>
+            <h1>wasabi news</h1>
+            <p>Sign up to our newsletter to be the first to hear about new dishes on the menu, giveaways and special
+              offers.</p>
+            <button class="btn-theme border text-uppercase">Sign up</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<section class='site-footer'>
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-md-6 p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9552315.356009835!2d-13.432008768551936!3d54.23127296065713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sbd!4v1620149293485!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-md-6">
+        <div class="row d-flex align-items-center h-100">
+          <div class="col-md-8 py-5 offset-md-2 mx-auto  contact">
+            <h1 class="text-center">Contact Us</h1><br>
+            <form class='w-100'>
+              <div class="form-group">
+                <label>  Your Name</label>
+                <input type="text" class="form-control" > 
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea class="form-control"></textarea>
+              </div> 
+              <button type="submit" class="btn-theme float-right">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
-
-
-  <!--  
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/images/slider/1.jpg" class="d-block img-fluid"></div>
-                    <div class="swiper-slide"><img src="/images/slider/2.jpg" class="d-block img-fluid"></div>
-                    <div class="swiper-slide"><img src="/images/slider/3.jpg" class="d-block img-fluid"></div>
-                    <div class="swiper-slide"><img src="/images/slider/4.jpg" class="d-block img-fluid"></div> 
-                    <div class="swiper-slide"><img src="/images/slider/5.jpg" class="d-block img-fluid"></div> 
-                   
-                </div> 
-                <div class="swiper-pagination"></div>
-            </div> -->
 
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -186,6 +271,12 @@
           },
 
           375: {
+            slidesPerView: 1,
+            loopedSlides: 1,
+            spaceBetween: 20
+          },
+
+          320: {
             slidesPerView: 1,
             loopedSlides: 1,
             spaceBetween: 20
