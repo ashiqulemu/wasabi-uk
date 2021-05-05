@@ -56,7 +56,7 @@ html {
 .customSection h1 {
   font-size: 4rem;
   margin-top: 10px;
-  color: #F95425;
+  color: #de3623;
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
@@ -123,7 +123,7 @@ html {
 }
 
 .navCustom .brand {
-  background: #ffffff;
+  background: #fff;
   position: absolute;
   margin: 0 auto;
   max-width: 197px;
@@ -223,7 +223,7 @@ html {
 }
 
 .subscribe {
-  background: #F95425;
+  background: #de3623;
   color: #fff;
 }
 
@@ -263,7 +263,7 @@ html {
 
 .toTop:hover {
   color: #fff;
-  background: #F95425;
+  background: #de3623;
 }
 
 .product_desc {
@@ -280,8 +280,8 @@ html {
   outline: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #F95425;
-  border: 2px solid #F95425;
+  background-color: #de3623;
+  border: 2px solid #de3623;
   color: #fff !important;
   padding: 16px 24px;
   font-size: 1.5rem;
@@ -293,7 +293,7 @@ html {
 }
 
 .bg-primary {
-  background-color: #F95425 !important;
+  background-color: #de3623 !important;
 }
 
 .bg-primary:hover {
@@ -301,7 +301,7 @@ html {
 }
 
 .text-primary {
-  color: #F95425 !important;
+  color: #de3623 !important;
 }
 
 .link-outline {
@@ -315,8 +315,8 @@ html {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   background-color: transparent;
-  border: 2px solid #F95425;
-  color: #F95425 !important;
+  border: 2px solid #de3623;
+  color: #de3623 !important;
   padding: 4px 13px;
   text-decoration: none;
   font-size: 1.63333rem;
@@ -330,12 +330,12 @@ html {
 }
 
 .link-outline .iconify {
-  color: #F95425;
+  color: #de3623;
 }
 
 .link-outline:hover {
   color: #fff !important;
-  background: #F95425;
+  background: #de3623;
 }
 
 .link-outline:hover .iconify {
@@ -426,7 +426,7 @@ html {
 }
 
 .header .area ul li a:hover {
-  color: #F95425;
+  color: #de3623;
 }
 
 .card-img-top {
@@ -537,7 +537,7 @@ html {
   display: block;
   height: 2px;
   width: 128px;
-  background: #F95425;
+  background: #de3623;
   border: 0;
   margin-bottom: 40px;
 }
@@ -564,7 +564,7 @@ html {
 }
 
 .menuItems ul li a:hover {
-  background-color: #F95425;
+  background-color: #de3623;
   color: #fff;
 }
 
@@ -595,7 +595,7 @@ html {
 .productSlider h1 {
   font-size: 4rem;
   margin-top: 10px;
-  color: #F95425;
+  color: #de3623;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -612,7 +612,7 @@ html {
 }
 
 :target .col-lg-12 .mb-5 {
-  color: #F95425;
+  color: #de3623;
 }
 
 .contact label {
@@ -620,12 +620,12 @@ html {
 }
 
 .mainFooter {
-  background: #F95425;
+  background: #de3623;
   padding: 50px 0;
 }
 
 .mainFooter table tr td {
-  color: #ffffff;
+  color: #fff;
   font-size: 19px;
   border: 1px solid;
   padding: 1px 7px;
@@ -643,7 +643,7 @@ html {
 
 .mainFooter .menu li a {
   line-height: 1.5;
-  color: #ffffff;
+  color: #fff;
   font-size: 21px;
   text-decoration: none;
   letter-spacing: 1px;
@@ -656,6 +656,16 @@ html {
 .mainFooter .custom p {
   margin-bottom: 0;
   font-size: 21px;
+  color: #fff;
+}
+
+footer {
+  background-color: #de3623;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+footer a {
   color: #fff;
 }
 

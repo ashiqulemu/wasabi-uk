@@ -27,7 +27,7 @@
         
 
 
-        $primary:#F95425;
+        $primary:#de3623;
         $dark:#172b4d;
         $white:#fff;
         $lightgrey:#ECEBE9;
@@ -116,7 +116,7 @@
           }
 
           .brand {
-            background: #ffffff;
+            background:$white;
             position: absolute;
             margin: 0 auto;
             max-width: 197px;
@@ -253,7 +253,7 @@
           align-items: center;
           justify-content: center;
           text-decoration: none;
-          color: #fff;
+          color: $white;
 
           &:hover {
             color: $white;
@@ -449,7 +449,7 @@
               h1 {
                 font-size: 4.44444rem;
                 line-height: 88px;
-                color: #fff;
+                color: $white;
                 text-align: center;
                 font-weight: bold;
                 letter-spacing: 3px;
@@ -598,7 +598,7 @@
           table{
             tr{
               td{
-                color: #ffffff;
+                color:$white;
                 font-size: 19px;
                 border: 1px solid;
                 padding: 1px 7px;
@@ -614,7 +614,7 @@
             li{
               a{
                 line-height: 1.5;
-                color: #ffffff;
+                color:$white;
                 font-size: 21px;
                 text-decoration: none;
                 letter-spacing: 1px;
@@ -628,8 +628,17 @@
             p{
               margin-bottom: 0;
               font-size: 21px;
-              color: #fff;
+              color: $white;
             }
+          }
+        }
+
+        footer{ 
+          background-color: $primary;
+          color:$white;
+          letter-spacing: 1px;
+          a{
+            color: $white;
           }
         }
 
