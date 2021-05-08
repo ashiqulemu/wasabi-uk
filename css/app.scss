@@ -24,7 +24,7 @@
           scroll-behavior: smooth;
         }
 
-        
+
 
 
         $primary:#de3623;
@@ -35,18 +35,19 @@
 
         //classes
 
-        .sectionCommon{
+        .sectionCommon {
           .rightBg {
             background: url('../images/sidebg.jfif');
             background-size: cover;
-            background-position: 50% 50% ;
+            background-position: 50% 50%;
           }
+
           .leftBg {
             background: url('../images/delivery-man-with-medical-mask_23-2148557060.jpg');
             background-size: cover;
-            background-position: 50% 50% ;
+            background-position: 50% 50%;
           }
-         
+
         }
 
         .customSection {
@@ -57,7 +58,7 @@
           align-items: center;
           justify-content: center;
 
-          
+
 
           h1 {
             font-size: 4rem;
@@ -116,7 +117,7 @@
           }
 
           .brand {
-            background:$white;
+            background: $white;
             position: absolute;
             margin: 0 auto;
             max-width: 197px;
@@ -243,6 +244,7 @@
 
         .toTop {
           position: fixed;
+          z-index: 10;
           right: 10px;
           bottom: 32px;
           background: $dark;
@@ -320,7 +322,7 @@
             font-size: 1.23333rem;
           }
 
-         
+
 
           .iconify {
             color: $primary;
@@ -472,6 +474,7 @@
                   font-size: 1.33333rem;
                   line-height: 32px;
                   text-decoration: none;
+
                   @media(max-width:425px) {
                     font-size: 1rem;
                   }
@@ -490,6 +493,13 @@
           width: 100%;
           flex-direction: column;
           padding: 20px 0;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          background: #fff;
+          @media(max-width:450px){
+           text-align: center;  
+          }
 
           h1 {
             font-size: 3.11111rem;
@@ -505,6 +515,7 @@
             border: 0;
             margin-bottom: 40px;
           }
+ 
 
           ul {
             margin: 0;
@@ -528,6 +539,15 @@
                   color: $white;
                 }
 
+                &.active {
+                  background-color: $primary; 
+                  color: $white;
+                }
+
+                @media(max-width:450px){
+                  line-height: 2.5;  
+                }
+
               }
             }
           }
@@ -536,6 +556,10 @@
         .food {
           padding: 50px;
           background: $lightgrey;
+
+          @media(max-width:768px) {
+            padding: 25px 0;
+          }
 
           .card {
             transition: 0.4s all;
@@ -550,9 +574,7 @@
           padding: 38px 0;
           background: beige;
 
-          @media(max-width:600px) {
-             
-          }
+
 
           .swiper-container {
             height: 245px;
@@ -584,6 +606,10 @@
 
         :target .col-lg-12 .mb-5 {
           color: $primary;
+          margin-top: 230px;
+          @media(max-width:450px){
+            margin-top: 270px;
+          }
         }
 
         .contact {
@@ -592,41 +618,57 @@
           }
         }
 
-        .mainFooter{
-          background:$primary;
-          padding:50px 0;
-          table{
-            tr{
-              td{
-                color:$white;
+        .mainFooter {
+          background: $primary;
+          padding: 50px 0;
+
+          @media(max-width:768px) {
+            text-align: center;
+
+            table {
+              margin: 0 auto;
+              margin-bottom: 25px;
+            }
+          }
+
+          table {
+            tr {
+              td {
+                color: $white;
                 font-size: 19px;
                 border: 1px solid;
                 padding: 1px 7px;
               }
             }
           }
-          .sp-module-title{
-            color:#e9ea6e;
+
+          .sp-module-title {
+            color: #e9ea6e;
             margin-bottom: 10px;
           }
-          .menu{
-            margin: 0; padding: 0;
+
+          .menu {
+            margin: 0;
+            padding: 0;
             list-style: none;
-            li{
-              a{
+
+            li {
+              a {
                 line-height: 1.5;
-                color:$white;
+                color: $white;
                 font-size: 21px;
                 text-decoration: none;
                 letter-spacing: 1px;
-                &:hover{
-                  color:black;
+
+                &:hover {
+                  color: black;
                 }
               }
             }
           }
-          .custom{
-            p{
+
+          .custom {
+            p {
               margin-bottom: 0;
               font-size: 21px;
               color: $white;
@@ -634,15 +676,16 @@
           }
         }
 
-        footer{ 
+        footer {
           background-color: $primary;
-          color:$white;
+          color: $white;
           letter-spacing: 1px;
-          a{
+
+          a {
             color: $white;
           }
         }
-
+     
         @keyframes fadeIn {
           from {
             transform: rotate(45deg);

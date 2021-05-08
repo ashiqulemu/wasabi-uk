@@ -242,6 +242,7 @@ html {
 
 .toTop {
   position: fixed;
+  z-index: 10;
   right: 10px;
   bottom: 32px;
   background: #172b4d;
@@ -525,6 +526,17 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+
+@media (max-width: 450px) {
+  .menuItems {
+    text-align: center;
+  }
 }
 
 .menuItems h1 {
@@ -568,9 +580,26 @@ html {
   color: #fff;
 }
 
+.menuItems ul li a.active {
+  background-color: #de3623;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  .menuItems ul li a {
+    line-height: 2.5;
+  }
+}
+
 .food {
   padding: 50px;
   background: #ECEBE9;
+}
+
+@media (max-width: 768px) {
+  .food {
+    padding: 25px 0;
+  }
 }
 
 .food .card {
@@ -613,6 +642,13 @@ html {
 
 :target .col-lg-12 .mb-5 {
   color: #de3623;
+  margin-top: 230px;
+}
+
+@media (max-width: 450px) {
+  :target .col-lg-12 .mb-5 {
+    margin-top: 270px;
+  }
 }
 
 .contact label {
@@ -622,6 +658,16 @@ html {
 .mainFooter {
   background: #de3623;
   padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .mainFooter {
+    text-align: center;
+  }
+  .mainFooter table {
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
 }
 
 .mainFooter table tr td {
