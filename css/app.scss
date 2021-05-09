@@ -685,6 +685,20 @@
             color: $white;
           }
         }
+
+        .modalOverflowInfo{
+          max-height: 250px;
+          overflow-y: auto;
+          &::-webkit-scrollbar{
+           
+            background: linear-gradient(to right, #fff, #e4e4e4);
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb{ 
+          background-color: $primary; 
+        }
+        }
      
         @keyframes fadeIn {
           from {

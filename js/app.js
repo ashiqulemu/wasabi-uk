@@ -10,7 +10,8 @@
    }
 
   
-
+  let video  = document.getElementById('slideVideo');
+      video.play();
               
  
 
