@@ -427,7 +427,7 @@
           text-decoration: none;
 
           @media(max-width:768px) {
-            font-size: 1.23333rem;
+            font-size: 17px;
           }
 
 
@@ -593,7 +593,7 @@
                   text-decoration: none;
 
                   @media(max-width:425px) {
-                    font-size: 1rem;
+                    font-size: 17px;
                   }
                 }
               }
@@ -836,8 +836,12 @@
           justify-content: space-around;
           align-items: center;
           img{ 
+            transition: all 0.3s ease;
             width: 150px;
             margin-bottom: 10px;
+            &:hover{
+              transform: translateY(-6px);
+            }
           }
         }
         @keyframes fadeIn {

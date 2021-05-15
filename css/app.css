@@ -439,7 +439,7 @@ html {
 
 @media (max-width: 768px) {
   .link-outline {
-    font-size: 1.23333rem;
+    font-size: 17px;
   }
 }
 
@@ -625,7 +625,7 @@ html {
 
 @media (max-width: 425px) {
   .slide .slideInfo .inner .links .link-outline {
-    font-size: 1rem;
+    font-size: 17px;
   }
 }
 
@@ -876,8 +876,15 @@ footer a {
 }
 
 .feature-photo img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   width: 150px;
   margin-bottom: 10px;
+}
+
+.feature-photo img:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 @-webkit-keyframes fadeIn {
