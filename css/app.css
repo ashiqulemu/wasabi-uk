@@ -23,6 +23,37 @@ html {
   scroll-behavior: smooth;
 }
 
+.order {
+  background-color: #ffff;
+}
+
+.order .shopDetails {
+  text-align: center;
+}
+
+.order .shopDetails h3 {
+  color: #ff1818;
+}
+
+.order .shopDetails .titleBar {
+  margin-top: 5px;
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  width: 60px;
+  background: #cddc39;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.order .shopDetails .addrs {
+  color: #5b6265;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin: 17px 0;
+}
+
 .aboutUs {
   background-image: url("../images/desktop-about-us-1024x576.jpg");
   background-size: cover;
@@ -435,11 +466,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 2;
 }
 
 .header .area {
@@ -472,6 +498,12 @@ html {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .area:nth-child(2) img {
+    width: 150px;
   }
 }
 
@@ -612,10 +644,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 64px;
+  top: 0;
   z-index: 1;
   background: #fff;
 }
@@ -633,17 +664,25 @@ html {
 }
 
 .menuItems hr {
+  margin-top: 5px;
   display: block;
   height: 2px;
   width: 128px;
   background: #de3623;
   border: 0;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .menuItems ul {
   margin: 0;
   padding: 0;
+  margin: 11px 0px 16px;
+}
+
+@media (max-width: 768px) {
+  .menuItems ul {
+    margin: 0px 0px 16px;
+  }
 }
 
 .menuItems ul li {
@@ -729,7 +768,7 @@ html {
 
 :target .col-lg-12 .mb-5 {
   color: #de3623;
-  margin-top: 230px;
+  margin-top: 180px;
 }
 
 @media (max-width: 450px) {
@@ -820,6 +859,25 @@ footer a {
 
 .modalOverflowInfo::-webkit-scrollbar-thumb {
   background-color: #de3623;
+}
+
+.feature-photo {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-photo img {
+  width: 150px;
+  margin-bottom: 10px;
 }
 
 @-webkit-keyframes fadeIn {

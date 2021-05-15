@@ -36,6 +36,35 @@
         //classes
 
 
+        .order{ 
+          background-color: #ffff;
+            
+          .shopDetails{
+            text-align: center;
+            h3{
+              color: #ff1818; 
+            }
+            .titleBar{
+              margin-top: 5px;
+              display: block;
+              height: 2px;
+              margin: 0 auto;
+              width: 60px;
+              background: #cddc39;
+              border: 0;
+              margin-bottom: 15px;
+            }
+            .addrs{
+              color: #5b6265;
+              font-size: 1.4rem;
+              letter-spacing: 1px;
+              line-height: 1.1;
+              margin: 17px 0;
+            }
+          }
+        }
+
+
         .aboutUs {
           background-image: url('../images/desktop-about-us-1024x576.jpg');
           background-size: cover;
@@ -423,10 +452,10 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          position: sticky;
-          top: 0;
-          background: #fff;
-          z-index: 2;
+          // position: sticky;
+          // top: 0;
+          // background: #fff;
+          // z-index: 2;
 
           .area {
             padding: 0 25px;
@@ -447,6 +476,11 @@
 
               @media(max-width:768px) {
                 flex: 1;
+                justify-content: center;
+
+                img {
+                  width: 150px;
+                }
               }
             }
 
@@ -575,9 +609,8 @@
           justify-content: center;
           width: 100%;
           flex-direction: column;
-          padding: 20px 0;
           position: sticky;
-          top: 64px;
+          top: 0;
           z-index: 1;
           background: #fff;
 
@@ -592,18 +625,24 @@
           }
 
           hr {
+            margin-top: 5px;
             display: block;
             height: 2px;
             width: 128px;
             background: $primary;
             border: 0;
-            margin-bottom: 40px;
+            margin-bottom: 15px;
           }
 
 
           ul {
             margin: 0;
             padding: 0;
+            margin: 11px 0px 16px;
+
+            @media(max-width:768px) {
+              margin: 0px 0px 16px;
+            }
 
             li {
               list-style: none;
@@ -690,7 +729,7 @@
 
         :target .col-lg-12 .mb-5 {
           color: $primary;
-          margin-top: 230px;
+          margin-top: 180px;
 
           @media(max-width:450px) {
             margin-top: 270px;
@@ -789,7 +828,18 @@
             background-color: $primary;
           }
         }
-
+        
+        .feature-photo{
+          margin-top: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          img{ 
+            width: 150px;
+            margin-bottom: 10px;
+          }
+        }
         @keyframes fadeIn {
           from {
             transform: rotate(45deg);
