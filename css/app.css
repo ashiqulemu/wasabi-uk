@@ -551,6 +551,7 @@ html {
 
 .card-img-top {
   max-width: 275px;
+  border-bottom: 1px solid #f3f3f3;
   margin: 0 auto;
 }
 
@@ -909,5 +910,22 @@ footer a {
             transform: rotate(360deg);
     opacity: 1;
   }
+}
+
+.title-bar-primary4:before {
+  content: "";
+  height: 4px;
+  width: 50px;
+  background: #de3623;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.contact-info li {
+  list-style: none;
+  font-size: 22px;
 }
 /*# sourceMappingURL=app.css.map */
