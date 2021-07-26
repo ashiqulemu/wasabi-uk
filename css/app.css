@@ -75,9 +75,9 @@ html {
 }
 
 .sectionCommon .rightBg {
-  background: url("../images/sidebg.jfif");
+  background: url("../images/foodbanner1.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 5% 45%;
 }
 
 .sectionCommon .leftBg {
@@ -164,6 +164,10 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.customSection img {
+  width: 200px;
 }
 
 .customSection h1 {
@@ -754,6 +758,8 @@ html {
   color: #de3623;
   font-weight: bold;
   text-transform: capitalize;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .productSlider .iconify {
