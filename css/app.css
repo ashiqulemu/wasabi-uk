@@ -55,7 +55,7 @@ html {
 }
 
 .aboutUs {
-  background-image: url("../images/desktop-about-us-1024x576.jpg");
+  background-image: url("../images/desktop-about-us-new.jpg");
   background-size: cover;
   padding: 52px 0;
   background-repeat: no-repeat;
@@ -172,7 +172,7 @@ html {
 .customSection h1 {
   font-size: 3rem;
   margin-top: 10px;
-  color: #de3623;
+  color: #FD331A;
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
@@ -197,12 +197,12 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(45deg, #ffb729, #dc8f01b3), url(../images/dobbelburger.jpg);
+  background-image: linear-gradient(45deg, #f4b356db 8%, #fd733eab 51%, #dc4910), url(../images/dobbelburger-new.jpg);
   z-index: 111;
   background-size: cover;
-  background-position: 20% 36%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  background-position: 50% 36%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +248,7 @@ html {
 
 @media (max-width: 768px) {
   .navCustom .brand {
-    max-width: 100px;
+    max-width: 120px;
   }
 }
 
@@ -259,7 +259,7 @@ html {
 
 .navCustom .brand:after {
   content: '';
-  height: 300px;
+  height: 220px;
   background: white;
   width: 300px;
   position: absolute;
@@ -271,12 +271,12 @@ html {
 
 @media (max-width: 768px) {
   .navCustom .brand:after {
-    height: 198px;
+    height: 127px;
     background: white;
-    width: 170px;
+    width: 160px;
     position: absolute;
-    top: -76px;
-    left: -33px;
+    top: -42px;
+    left: -22px;
   }
 }
 
@@ -339,7 +339,7 @@ html {
 }
 
 .subscribe {
-  background: #de3623;
+  background: #FD331A;
   color: #fff;
 }
 
@@ -380,7 +380,7 @@ html {
 
 .toTop:hover {
   color: #fff;
-  background: #de3623;
+  background: #FD331A;
 }
 
 .product_desc {
@@ -397,8 +397,8 @@ html {
   outline: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #de3623;
-  border: 2px solid #de3623;
+  background-color: #FD331A;
+  border: 2px solid #FD331A;
   color: #fff !important;
   padding: 16px 24px;
   font-size: 1.5rem;
@@ -410,7 +410,7 @@ html {
 }
 
 .bg-primary {
-  background-color: #de3623 !important;
+  background-color: #FD331A !important;
 }
 
 .bg-primary:hover {
@@ -418,7 +418,7 @@ html {
 }
 
 .text-primary {
-  color: #de3623 !important;
+  color: #FD331A !important;
 }
 
 .link-outline {
@@ -432,11 +432,11 @@ html {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   background-color: transparent;
-  border: 2px solid #de3623;
-  color: #de3623 !important;
+  border: 2px solid #FD331A;
+  color: #FD331A !important;
   padding: 4px 13px;
   text-decoration: none;
-  font-size: 1.63333rem;
+  font-size: 1.33333rem;
   text-decoration: none;
 }
 
@@ -447,12 +447,12 @@ html {
 }
 
 .link-outline .iconify {
-  color: #de3623;
+  color: #FD331A;
 }
 
 .link-outline:hover {
   color: #fff !important;
-  background: #de3623;
+  background: #FD331A;
 }
 
 .link-outline:hover .iconify {
@@ -472,7 +472,7 @@ html {
 }
 
 .header .area {
-  padding: 0 25px;
+  padding: 0 9px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -491,9 +491,9 @@ html {
 }
 
 .header .area:nth-child(2) {
-  -webkit-box-flex: 0.3;
-      -ms-flex: 0.3;
-          flex: 0.3;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
 }
 
 @media (max-width: 768px) {
@@ -549,7 +549,7 @@ html {
 }
 
 .header .area ul li a:hover {
-  color: #de3623;
+  color: #FD331A;
 }
 
 .card-img-top {
@@ -672,7 +672,7 @@ html {
   display: block;
   height: 2px;
   width: 128px;
-  background: #de3623;
+  background: #FD331A;
   border: 0;
   margin-bottom: 15px;
 }
@@ -706,12 +706,12 @@ html {
 }
 
 .menuItems ul li a:hover {
-  background-color: #de3623;
+  background-color: #FD331A;
   color: #fff;
 }
 
 .menuItems ul li a.active {
-  background-color: #de3623;
+  background-color: #FD331A;
   color: #fff;
 }
 
@@ -754,7 +754,7 @@ html {
 .productSlider h1 {
   font-size: 4rem;
   margin-top: 10px;
-  color: #de3623;
+  color: #FD331A;
   font-weight: bold;
   text-transform: capitalize;
   width: 65%;
@@ -773,7 +773,7 @@ html {
 }
 
 :target .col-lg-12 .mb-5 {
-  color: #de3623;
+  color: #FD331A;
   margin-top: 180px;
 }
 
@@ -792,7 +792,7 @@ html {
 }
 
 .mainFooter {
-  background: #de3623;
+  background: #FD331A;
   padding: 50px 0;
 }
 
@@ -843,7 +843,7 @@ html {
 }
 
 footer {
-  background-color: #de3623;
+  background-color: #d61500;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -864,7 +864,7 @@ footer a {
 }
 
 .modalOverflowInfo::-webkit-scrollbar-thumb {
-  background-color: #de3623;
+  background-color: #FD331A;
 }
 
 .feature-photo {
@@ -921,7 +921,7 @@ footer a {
   content: "";
   height: 4px;
   width: 50px;
-  background: #de3623;
+  background: #FD331A;
   position: absolute;
   left: 0;
   bottom: 0;
