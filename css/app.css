@@ -749,6 +749,7 @@ html {
 
 .productSlider .swiper-container {
   height: 245px;
+  overflow: hidden;
 }
 
 .productSlider h1 {
@@ -794,8 +795,8 @@ html {
 }
 
 .mainFooter {
-  background: #FD331A;
   padding: 50px 0;
+  background-color: #F5F5DE;
 }
 
 @media (max-width: 768px) {
@@ -809,14 +810,14 @@ html {
 }
 
 .mainFooter table tr td {
-  color: #fff;
+  color: #d61500;
   font-size: 19px;
   border: 1px solid;
   padding: 1px 7px;
 }
 
 .mainFooter .sp-module-title {
-  color: #e9ea6e;
+  color: #d61500;
   margin-bottom: 10px;
 }
 
@@ -828,7 +829,7 @@ html {
 
 .mainFooter .menu li a {
   line-height: 1.5;
-  color: #fff;
+  color: #d61500;
   font-size: 21px;
   text-decoration: none;
   letter-spacing: 1px;
@@ -841,7 +842,7 @@ html {
 .mainFooter .custom p {
   margin-bottom: 0;
   font-size: 21px;
-  color: #fff;
+  color: #d61500;
 }
 
 footer {

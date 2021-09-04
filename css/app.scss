@@ -705,6 +705,7 @@
 
           .swiper-container {
             height: 245px;
+            overflow: hidden;
 
             @media(max-width:600px) {
               //height: 366px;
@@ -755,9 +756,9 @@
         }
 
         .mainFooter {
-          background: $primary;
+          // background: $primary;
           padding: 50px 0;
-
+          background-color: #F5F5DE;
           @media(max-width:768px) {
             text-align: center;
 
@@ -770,7 +771,7 @@
           table {
             tr {
               td {
-                color: $white;
+                color: #d61500;
                 font-size: 19px;
                 border: 1px solid;
                 padding: 1px 7px;
@@ -779,7 +780,7 @@
           }
 
           .sp-module-title {
-            color: #e9ea6e;
+            color: #d61500;
             margin-bottom: 10px;
           }
 
@@ -791,7 +792,7 @@
             li {
               a {
                 line-height: 1.5;
-                color: $white;
+                color: #d61500;
                 font-size: 21px;
                 text-decoration: none;
                 letter-spacing: 1px;
@@ -807,7 +808,7 @@
             p {
               margin-bottom: 0;
               font-size: 21px;
-              color: $white;
+              color:#d61500;
             }
           }
         }
