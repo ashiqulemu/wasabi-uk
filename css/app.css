@@ -733,8 +733,8 @@ html {
 }
 
 .food .card {
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .food .card:hover {
